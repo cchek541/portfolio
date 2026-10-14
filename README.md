@@ -1,17 +1,12 @@
-# Developer portfolio
+# Chingun — software engineer portfolio
 
-English-first personal site for software engineering recruiters.
+English-first site for software engineering recruiters. Dark engineering-brief layout, case studies, and a live job-matching API demo.
 
-This repository will contain:
+## Stack
 
-- A React + TypeScript portfolio (Vite + Tailwind)
-- Case studies (TomYo, health-risk capstone)
-- A small live job-matching API demo with tests
-- GitHub Actions for lint, typecheck, and tests
-
-## Status
-
-Foundation only. Application code ships in stacked pull requests.
+- React + TypeScript + Vite
+- Tailwind CSS
+- Node.js API (later PR) + Vitest + GitHub Actions
 
 ## Local setup
 
@@ -20,4 +15,13 @@ npm install
 npm run dev
 ```
 
+```bash
+npm test
+npm run lint
+npm run typecheck
+npm run build
+```
+
 Do not commit `.env` files or confidential employer code.
+
+CV PDF lives at `/cv.pdf` once added.
