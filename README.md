@@ -22,6 +22,12 @@ npm run typecheck
 npm run build
 ```
 
+## Deployment
+
+Hosted on Vercel, connected to this repo. Every merge to `main` deploys to production, and each pull request gets a preview URL.
+
+`vercel.json` sends every non-file path except `/api/*` to `index.html`, so client-side routes like `/work/tomyo` work on refresh and direct links.
+
 Do not commit `.env` files or confidential employer code.
 
 CVs: `/cv.pdf` (English) and `/cv-ko.pdf` (Korean), served from `public/`.
