@@ -1,30 +1,24 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { AppShell } from './components/AppShell.tsx'
-
-function ScaffoldHome() {
-  return (
-    <section className="mx-auto max-w-3xl px-5 py-16">
-      <p className="font-mono text-xs tracking-[0.2em] text-accent uppercase">
-        Portfolio scaffold
-      </p>
-      <h1 className="mt-4 text-4xl font-semibold tracking-tight text-paper">
-        Chingun
-      </h1>
-      <p className="mt-3 max-w-xl text-muted">
-        Software engineer. Design tokens, app shell, and CI land first so later
-        case studies and the live demo sit on a stable foundation.
-      </p>
-    </section>
-  )
-}
+import { LangProvider } from './components/LangProvider.tsx'
+import { CaseStudyPage } from './pages/CaseStudyPage.tsx'
+import { Demo } from './pages/Demo.tsx'
+import { Evidence } from './pages/Evidence.tsx'
+import { Overview } from './pages/Overview.tsx'
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<AppShell />}>
-        <Route path="/" element={<ScaffoldHome />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Route>
-    </Routes>
+    <LangProvider>
+      <Routes>
+        <Route element={<AppShell />}>
+          <Route path="/" element={<Overview />} />
+          <Route path="/work/tomyo" element={<CaseStudyPage slug="tomyo" />} />
+          <Route path="/work/capstone" element={<CaseStudyPage slug="capstone" />} />
+          <Route path="/demo" element={<Demo />} />
+          <Route path="/evidence" element={<Evidence />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
+      </Routes>
+    </LangProvider>
   )
 }

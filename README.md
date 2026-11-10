@@ -1,6 +1,6 @@
-# Chingun — software engineer portfolio
+# Chinguun — full-stack developer portfolio
 
-English-first site for software engineering recruiters. Dark engineering-brief layout, case studies, and a live job-matching API demo.
+English-first site (with a Korean toggle) for software engineering recruiters. Dark engineering-brief layout, case studies, and a live job-matching API demo.
 
 ## Stack
 
@@ -24,4 +24,4 @@ npm run build
 
 Do not commit `.env` files or confidential employer code.
 
-CV PDF lives at `/cv.pdf` once added.
+CVs: `/cv.pdf` (English) and `/cv-ko.pdf` (Korean), served from `public/`.
