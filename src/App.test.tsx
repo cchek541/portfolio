@@ -42,4 +42,14 @@ describe('App', () => {
     expect(document.documentElement.lang).toBe('ko')
     expect(window.localStorage.getItem('portfolio-lang')).toBe('ko')
   })
+
+  it('offers the CV in the current language', () => {
+    renderAt('/evidence')
+    expect(screen.getByRole('link', { name: /Download CV/ })).toHaveAttribute('href', '/cv.pdf')
+    fireEvent.click(screen.getByRole('button', { name: '한국어' }))
+    expect(screen.getByRole('link', { name: /이력서 다운로드/ })).toHaveAttribute(
+      'href',
+      '/cv-ko.pdf',
+    )
+  })
 })

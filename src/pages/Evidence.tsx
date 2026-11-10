@@ -1,5 +1,6 @@
 import { useContent } from '../lang.ts'
-import { EntryList, Eyebrow, SectionTitle } from '../components/ui.tsx'
+import { CvLink } from '../components/CvLink.tsx'
+import { buttonGhost, EntryList, Eyebrow, SectionTitle } from '../components/ui.tsx'
 
 export function Evidence() {
   const c = useContent()
@@ -11,6 +12,7 @@ export function Evidence() {
         {c.labels.evidenceTitle}
       </h1>
       <p className="mt-4 text-muted">{c.labels.evidenceIntro}</p>
+      <CvLink className={`${buttonGhost} mt-6`} />
 
       <section className="mt-14">
         <SectionTitle>{c.labels.experience}</SectionTitle>

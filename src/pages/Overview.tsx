@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { contact } from '../content.ts'
 import { useContent } from '../lang.ts'
+import { CvLink } from '../components/CvLink.tsx'
 import {
   buttonGhost,
   buttonPrimary,
@@ -42,6 +43,7 @@ export function Overview() {
               LinkedIn
             </a>
           )}
+          <CvLink className={buttonGhost} />
         </div>
       </section>
 

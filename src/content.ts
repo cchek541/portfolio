@@ -10,6 +10,11 @@ export const contact = {
   linkedin: 'https://www.linkedin.com/in/chinguun-chuluungerel/',
 } as const
 
+// CV PDFs in /public, one per language.
+export const cvFiles: Record<Lang, { href: string; filename: string }> = {
+  en: { href: '/cv.pdf', filename: 'Resume_Chinguun.pdf' },
+  ko: { href: '/cv-ko.pdf', filename: '이력서_친궁.pdf' },
+}
 
 export interface Stat {
   value: string

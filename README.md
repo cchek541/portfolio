@@ -24,4 +24,4 @@ npm run build
 
 Do not commit `.env` files or confidential employer code.
 
-CV PDF lives at `/cv.pdf` once added.
+CVs: `/cv.pdf` (English) and `/cv-ko.pdf` (Korean), served from `public/`.
