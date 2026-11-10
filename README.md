@@ -1,6 +1,6 @@
-# Chingun — software engineer portfolio
+# Chinguun — full-stack developer portfolio
 
-English-first site for software engineering recruiters. Dark engineering-brief layout, case studies, and a live job-matching API demo.
+English-first site (with a Korean toggle) for software engineering recruiters. Dark engineering-brief layout, case studies, and a live job-matching API demo.
 
 ## Stack
 
