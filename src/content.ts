@@ -82,9 +82,9 @@ export interface Content {
 }
 
 const skillItems = {
-  languages: ['JavaScript', 'Python', 'Java', 'C++', 'HTML', 'CSS'],
-  frontend: ['React', 'Next.js', 'React Native', 'React-admin'],
-  backend: ['Node.js', 'Express', 'FastAPI', 'REST API', 'Swagger', 'Sequelize'],
+  languages: ['JavaScript', 'Python', 'Java', 'C++'],
+  frontend: ['React', 'Next.js', 'React Native', 'React-admin', 'HTML', 'CSS'],
+  backend: ['Node.js', 'Express', 'FastAPI', 'Swagger', 'Sequelize'],
   data: ['PostgreSQL', 'MySQL'],
   devops: ['Docker', 'AWS', 'Git', 'GitHub'],
   workflow: ['Jira', 'Slack'],
@@ -176,8 +176,8 @@ const en: Content = {
       org: 'Inha University',
       period: 'Mar 2022 – Dec 2025',
       points: [
+        'Relevant courses: Data Structures, Algorithms, Databases, Operating Systems, Computer Networks, Internet Programming',
         'Global Scholarship Program recipient',
-        'Coursework: Internet Programming, Computer Networks, Algorithms, Operating Systems, Data Structures, Databases',
         'Football team captain',
       ],
     },
@@ -188,12 +188,12 @@ const en: Content = {
   ],
   volunteer: [
     {
-      title: 'Talent Manager',
+      title: 'Talent Manager (Local Committee)',
       org: 'AIESEC in NUM',
       period: 'Sep 2019 – Dec 2021',
       points: [
-        'As Local Committee Manager, planned and ran events in line with AIESEC’s global strategy',
-        'Handled recruiting, training, and onboarding programs',
+        'Led recruitment, training, and onboarding programs for new members',
+        'Planned and ran events in line with AIESEC’s global operating standards',
       ],
     },
   ],
@@ -279,13 +279,13 @@ const en: Content = {
         {
           heading: 'Model integration',
           points: [
-            'Connected the XGBoost prediction model to the backend server for real-time analysis.',
+            'Integrated the XGBoost prediction model into the backend server for real-time risk analysis.',
           ],
         },
         {
           heading: 'Deployment',
           points: [
-            'Structured the services with scaling in mind and deployed the platform.',
+            'Designed the service structure for scalability and deployed it to production.',
           ],
         },
       ],
@@ -317,14 +317,14 @@ const ko: Content = {
     name: '친궁',
     fullName: 'Chuluungerel Chinguun',
     summary:
-      '백엔드, 웹, 모바일 실서비스 개발 경력 1년 이상의 풀스택 개발자입니다. TomYo EdTech에서 Node.js/PostgreSQL API, Next.js 웹, React Native 전반에 걸쳐 90개 이상의 PR을 머지했습니다.',
+      '백엔드·웹·모바일 전반에서 1년 이상 실서비스를 개발한 풀스택 개발자입니다. TomYo EdTech에서 Node.js/PostgreSQL API, Next.js 웹, React Native 앱에 걸쳐 90건 이상의 PR을 머지했습니다.',
     status:
       '인하대학교 컴퓨터공학 졸업(2025년 12월). 한국에서 정규직 개발자로 일할 기회를 찾고 있습니다. 국적 몽골, D-10 비자.',
     ctaWork: '프로젝트 보기',
     ctaEmail: '이메일 보내기',
   },
   stats: [
-    { value: '90+', label: 'TomYo 머지된 PR' },
+    { value: '90+', label: 'TomYo에서 머지한 PR' },
     { value: '8', label: '저장소: 백엔드, 웹, 모바일' },
     { value: '0.64 → 0.76', label: 'React Native 마이그레이션' },
     { value: 'TOPIK 5급', label: '한국어 · 영어 IELTS 7.5' },
@@ -362,13 +362,12 @@ const ko: Content = {
       period: '2025년 3월 – 2025년 12월',
       points: [
         'Node.js/Express, PostgreSQL(Sequelize) 기반 REST API 개발',
-        '백엔드, 웹, 모바일 8개 저장소에서 90개 이상의 PR 머지',
+        '백엔드·웹·모바일 등 8개 저장소에서 90건 이상의 PR 머지',
+        '통신사 소액결제 연동 구독/결제 시스템 개발',
         '결제 페이지 보안 취약점 발견 및 수정',
-        '통신사 결제 연동 구독/결제 시스템 개발',
         'Docker 기반 서비스 리팩터링 및 운영 장애 대응',
         'React Native 0.64 → 0.76 대규모 버전 마이그레이션 참여',
-        'React-admin 기반 내부 관리자 도구 개발',
-        '코드 리뷰 기반 협업 및 테스트 작성',
+        'React-admin 기반 내부 관리자 도구 개발, 코드 리뷰 기반 협업 및 테스트 작성',
       ],
     },
     {
@@ -376,9 +375,9 @@ const ko: Content = {
       org: 'TomYo EdTech',
       period: '2024년 12월 – 2025년 2월',
       points: [
-        'REST API·PostgreSQL 기반 프로젝트 3개 이상 개발 참여',
-        'Node.js 서비스 운영 및 성능 이슈 대응 (주 3건 이상)',
-        'Yarn 기반 개발 환경 개선 및 코드 관리 진행',
+        'REST API·PostgreSQL 기반 프로젝트 3건 이상 개발 참여',
+        'Node.js 서비스 성능 및 운영 이슈 주 3건 이상 대응',
+        'Yarn 기반 개발 환경 개선 및 코드 관리',
       ],
     },
   ],
@@ -388,8 +387,8 @@ const ko: Content = {
       org: '인하대학교',
       period: '2022년 3월 – 2025년 12월',
       points: [
-        '글로벌 장학 프로그램 대상자',
-        '관련 과정: 인터넷 프로그래밍, 컴퓨터 네트워크, 알고리즘, 운영체제, 자료구조, 데이터베이스',
+        '관련 과목: 자료구조, 알고리즘, 데이터베이스, 운영체제, 컴퓨터 네트워크, 인터넷 프로그래밍',
+        '글로벌 장학 프로그램 장학생',
         '축구부 주장',
       ],
     },
@@ -404,8 +403,8 @@ const ko: Content = {
       org: 'AIESEC in NUM',
       period: '2019년 9월 – 2021년 12월',
       points: [
-        '인재 채용 및 교육, 온보딩 프로그램과 행사 운영 담당',
-        '조직 운영 기준에 맞춰 프로그램을 관리하며 원활한 운영 지원',
+        '신규 회원 채용, 교육 및 온보딩 프로그램 운영',
+        '조직 운영 기준에 맞춘 행사 기획 및 진행',
       ],
     },
   ],
@@ -445,7 +444,7 @@ const ko: Content = {
         {
           heading: '결제와 구독',
           points: [
-            '통신사 결제를 연동한 구독 시스템을 개발했습니다.',
+            '통신사 소액결제를 연동한 구독/결제 시스템을 개발했습니다.',
             '결제 페이지의 보안 취약점을 발견하고 수정했습니다.',
           ],
         },
@@ -488,7 +487,7 @@ const ko: Content = {
         },
         {
           heading: '모델 연동',
-          points: ['AI 예측 모델을 백엔드 서버에 연동해 실시간 분석 기능을 구현했습니다.'],
+          points: ['XGBoost 예측 모델을 백엔드 서버에 연동해 실시간 위험 분석 기능을 구현했습니다.'],
         },
         {
           heading: '배포',
